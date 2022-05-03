@@ -2,6 +2,14 @@
 `include "uvm_macros.svh"
 import uvm_pkg::*;
 
+///////////////////////////VIRTUAL INTERFACE
+interface ram_if();
+  logic clk;
+  logic wr;
+  logic [7:0] din;
+  logic [7:0] dout;
+  logic [3:0] addr;
+endinterface
 ///////////////////////////TRANSACTION
 class transaction extends uvm_sequence_item;
 	rand bit wr;
