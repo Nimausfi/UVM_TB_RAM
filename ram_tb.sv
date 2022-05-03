@@ -1,7 +1,8 @@
  
 `include "uvm_macros.svh"
 import uvm_pkg::*;
- 
+
+///////////////////////////TRANSACTION
 class transaction extends uvm_sequence_item;
 	rand bit wr;
 	rand bit [7:0] din;
